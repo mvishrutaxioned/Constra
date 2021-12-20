@@ -53,8 +53,7 @@ $(document).ready(() => {
     $('.test-slider').slick({
         arrows: false,
         dots: true,
-        autoplay: true,
-        fade: true
+        autoplay: true
     })
 
     $('.modal-slider').slick({
@@ -66,7 +65,6 @@ $(document).ready(() => {
     $('.modal-slider .slick-next, .modal-slider .slick-prev').click(e => {
         var num = $('.modal-slider .slick-active').data('slickIndex')
         $('.img-num').text(num+1)
-            showTab(num+1)
     })
 
     $('.tab-content li').each(function(i, elem) {
@@ -76,15 +74,6 @@ $(document).ready(() => {
             $('html, body').css("overflow", "hidden");
         })
     })
-
-    // $('.projects, .specialists, .test-client').click(e => {
-    //     if($('section.modal:not(.no)') == fals) {
-    //         $('section.modal').fadeOut();
-    //         $('section.modal').addClass('no');
-    //         $('html, body').css("overflow", "visible");
-    //     console.log('hai')
-    //     }
-    // })
 
     // close video functionality by clicking outside
     $(document).mouseup(function(e) {

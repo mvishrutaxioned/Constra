@@ -64,7 +64,6 @@ $(document).ready(() => {
     $('.modal-slider .slick-next, .modal-slider .slick-prev').click(e => {
         var num = $('.modal-slider .slick-active').data('slickIndex')
         $('.img-num').text(num+1)
-            showTab(num+1)
     })
 
     $('.tab-content li').each(function(i, elem) {

@@ -1536,6 +1536,33 @@ footer {
 .ser-list li a:hover::before { color: #fff; }
 /* footer-top styling ends here */
 
+/* footer-bottom styling starts here */
+
+.foot-bottom { background: #ffb600; }
+
+.foot-bottom .wrapper {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.foot-bottom ul li { margin-left: 20px; }
+
+.foot-bottom ul li a { 
+  color: #000; 
+  -webkit-transition: .5s ease; 
+  -o-transition: .5s ease; 
+  transition: .5s ease;
+}
+
+.foot-bottom ul li a:hover { color: #333; }
+/* footer-bottom styling ends here */
 
  /*=================================
   footer styling ends here

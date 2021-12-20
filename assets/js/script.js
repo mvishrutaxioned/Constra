@@ -61,4 +61,19 @@ $(document).ready(() => {
         dots: false,
         arrows: true
     })
+
+    // modal slider num change
+    $('.modal-slider .slick-next, .modal-slider .slick-prev').click(e => {
+        var num = $('.modal-slider .slick-active').data('slickIndex')
+        $('.img-num').text(num+1)
+            showTab(num+1)
+    })
+
+    $('.tab-content li').each(function(i, elem) {
+        $(this).click(e => {
+            $('section.modal').fadeIn();
+            $('section.modal').removeClass('no');
+            $('html, body').css("overflow", "hidden");
+        })
+    })
 })

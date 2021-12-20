@@ -1823,12 +1823,17 @@ footer {
   }
 
   .foot-bottom ul { margin-top: 20px; }
+  .modal-slider,
+  .slide-num { width: 70%; }
 }
 
 /*media query for 540px starts here*/
 @media only screen and (max-width: 540px) {
 
-  .head-top ul { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .head-top ul { 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+  }
 
   .head-mid .wrapper,
   .letter {

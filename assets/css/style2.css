@@ -313,6 +313,188 @@ nav > ul > li:hover ul.list { display: -webkit-box; display: -ms-flexbox; displa
   main styling starts here
 =================================*/
 
+/* banner sytling starts here */
+
+.slide-li { position: relative; }
+.slider { overflow: hidden; }
+.slider li figure img { width: 105%; }
+
+.banner-content {
+  width: 84%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  z-index: 20;
+}
+
+.banner-content .wrapper {
+  width: 53%;
+  margin-left: 0;
+  padding: 30px 30px;
+  background: #0e0e0e80;
+  text-align: left;
+}
+
+.banner-content h2 { font-size: 18px; }
+
+.banner-content h3 {
+  margin: 16px 0;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.banner-content p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.banner-content a {
+  padding: 15px 25px;
+  margin: 36px 0 3px 3px;
+  border-radius: 3px;
+  background: #ffb600;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.banner-content a:hover { background: #f7ca5a; }
+
+.banner .slick-prev,
+.banner .slick-next {
+  padding: 20px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  font-size: 0;
+}
+
+.banner .slick-prev { left: 0; }
+.banner .slick-next { right: 0; }
+
+.banner .slick-prev::after,
+.banner .slick-next::after {
+  padding: 20px 24px;
+  background: #13131380;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.banner .slick-prev::after { content: '\f053'; }
+.banner .slick-next::after { content: '\f054'; }
+.banner .slick-prev:hover::after,
+.banner .slick-next:hover::after { color: #666; }
+
+.test-slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  bottom: 11%;
+  left: 0;
+  text-align: center;
+}
+
+.test-slider .slick-dots button {
+  padding: 5px;
+  margin-right: 18px;
+  border: none;
+  border-radius: 50%;
+  background: #000000;
+  font-size: 0;
+  outline: none;
+  opacity: .2;
+}
+
+.test-slider .slick-dots button:hover,
+.test-slider .slick-dots li.slick-active button {
+  opacity: 1;
+  background: #ffb600;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.banner { position: relative; }
+
+.req-quote {
+  width: 100%;
+  background: #282d33;
+}
+
+.req-quote .wrapper {
+  width: 84%;
+  padding: 33px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.req-quote p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.req-quote a {
+  padding: 12px 20px;
+  border-radius: 3px;
+  background: #ffb600;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.req-quote a:hover { background: #464c52; }
+/* banner sytling ends here */
+
 
 
 /*=================================

@@ -250,6 +250,135 @@ li {
 }
 /* headerMid styling ends here */
 
+/* nav styling starts here */
+nav { background: #23282c; }
+
+.menu {
+  display: none;
+  position: relative;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.close { 
+  display: none;
+  cursor: pointer;  
+}
+
+.menu::after {
+  content: '\f0c9';
+  color: #fff;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+}
+
+nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+nav .wrapper > ul li {
+  margin-right: 42px;
+  position: relative;
+}
+
+nav .wrapper > ul > li > a {
+  padding: 27px 0;
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: .5px;
+}
+
+nav .wrapper > ul > li > a::after {
+  content: '\f078';
+  padding-left: 3px;
+  margin-top: 27px;
+  position: absolute;
+  top: 3px;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+}
+
+nav .wrapper > ul > li:last-child > a::after { content: ''; }
+
+nav .wrapper > ul > li > a:hover,
+nav .wrapper > ul > li > a:hover::after,
+nav .wrapper > ul > li > a.active,
+nav .wrapper > ul > li > a.active::after,
+.search:hover::after {
+  color: #ffb600;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+nav .wrapper > ul > li:hover ul.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list {
+  width: auto;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  background: #dfdcdc;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.list li { width: 100%;}
+
+.list li a {
+  width: 100%;
+  padding: 10px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.list li a:hover { background: #fff; }
+.search { margin-right: 2%; }
+
+.search::after {
+  content: '\f002';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  color: #858383;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  text-indent: 0;
+}
+/* nav styling ends here */
 
 
 /*=================================

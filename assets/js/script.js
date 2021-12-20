@@ -164,4 +164,25 @@ $(document).ready(() => {
             });
         });
     }
+
+    // accordion functionality
+    var num = 0;
+    $('.acc li h3').each(function(i, acc) {
+        $(this).click(e => {
+            var elem = $(this).parent().find('div');
+            var li = $(this).parent();
+
+            if(num == i) {
+                elem.slideToggle();
+                li.toggleClass('active')
+            } else if (num != i) {
+                $(`.acc li:eq(${num}) div`).slideUp();
+                $(`.acc li:eq(${num})`).removeClass('active');
+                elem.slideDown();
+                li.addClass('active');
+            }
+
+            num = i;
+        })
+    })
 })

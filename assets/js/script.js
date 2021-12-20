@@ -203,4 +203,41 @@ $(document).ready(() => {
         if(n == 0) $('.tab-content > li').each(function(i, e) { $(this).show() })
         else $('.tab-content > li').eq(n-1).fadeIn()
     }
+
+    // form validation functionality
+    function checkEmail() {
+        var email = $('#email').val();
+
+        if(email == '') displayError('Above field is required')
+        else if(!regexEmail.test(email)) displayError('Please enter valid address')
+        else {
+            displaySuccess()
+            return 1;
+        }
+    }
+
+    // display error function
+    function displayError(msg) {
+        $('.error').text(msg)
+        $('.error').show()
+    }
+
+    function displaySuccess() {
+        $('.error').html('')
+        $('.error').hide()
+    }
+
+    $('#email').blur(e => $(this).focusout(checkEmail()))
+
+    // on newsletter submit
+    $('#newsletter').submit(e => {
+        e.preventDefault();
+        var checkNum = checkEmail();
+
+        if(checkNum == 1) {
+            displaySuccess()
+            $('#email').val('')
+            alert('Email Submitted. Thank You!');
+        }
+    })
 })

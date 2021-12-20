@@ -43,4 +43,22 @@ $(document).ready(() => {
         $('.excellence ul').append(content)
         $('.seeAllPosts').hide();
     })
+
+    // slick slider
+    $('.slider').slick({
+        dots: true,
+        arrows: true
+    });
+
+    $('.test-slider').slick({
+        arrows: false,
+        dots: true,
+        autoplay: true,
+        fade: true
+    })
+
+    $('.modal-slider').slick({
+        dots: false,
+        arrows: true
+    })
 })

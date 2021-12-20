@@ -1,4 +1,7 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
@@ -82,7 +85,7 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a { 
@@ -105,16 +108,85 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
-  width: 86%; 
+  width: 84%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+/* headerTop styling starts here */
+.head-top {
+  width: 100%;
+  background: #ebebeb;
+}
 
+.head-top .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
+.head-top { padding: 11px 0; }
 
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.location figure { 
+  width: 5%;
+  margin-right: 5px;
+}
+
+.location span {
+  color: #858383;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.social li { margin: 0 18px; }
+
+.social li a,
+.search {
+  position: relative;
+  text-indent: -9999px;
+}
+
+.social li a::after {
+  content: '\f39e';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #000;
+  font-weight: 400;
+  font-family: 'Font Awesome 5 Brands';
+  font-size: 14px;
+  text-indent: 0;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.social li.twitter a::after { content: '\f099'; }
+.social li.insta a::after { content: '\f16d'; }
+.social li.git a::after { content: '\f09b'; }
+
+.social li a:hover::after,
+.footer-top .social li a:hover::after { color: #666; }
+/* headerTop styling ends here */
 
 
 /*=================================
@@ -126,12 +198,6 @@ li {
 =================================*/
 
 
-
-
-
-
-
-
 /*=================================
   main styling ends here
 =================================*/
@@ -141,19 +207,7 @@ li {
 =================================*/ 
 
 
-
-
-
-
-
  /*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
 
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  

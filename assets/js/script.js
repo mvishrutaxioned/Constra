@@ -103,4 +103,21 @@ $(document).ready(() => {
         $('section.modal').addClass('no');
         $('html, body').css("overflow", "visible");
     })
+
+    // responsive navbar functionality
+    $('.menu').click(e => {
+        e.preventDefault();
+
+        $('nav .wrapper > ul').addClass('slide');
+        $('.close').addClass('slide');
+        $('html, body').css("overflow", "hidden");
+    })
+
+    $('.close').click(e => {
+        e.preventDefault();
+
+        $('nav .wrapper > ul').removeClass('slide');
+        $('.close').removeClass('slide');
+        $('html, body').css("overflow", "visible");
+    })
 })

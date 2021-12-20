@@ -745,6 +745,59 @@ nav .wrapper > ul > li:hover ul.list {
 
 /* about styling ends here */
 
+/* counter styling starts here */
+.counter { background: #252525; }
+
+.counter .wrapper {
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.counter ul {
+  padding: 35px 15px 25px 15px;
+  margin: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.counter ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.counter ul li figure { width: 40%; }
+.counter ul li:last-child figure { width: 27%; }
+
+.counter h2 {
+  margin: 20px 0 11px 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.counter h3 {
+  color: #ffb600;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+/* counter styling ends here */
+
 
 /*=================================
   main styling ends here

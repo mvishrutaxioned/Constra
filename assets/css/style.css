@@ -1307,6 +1307,119 @@ nav .wrapper > ul > li:hover ul.list {
 }
 /* toggleBtn styling ends here */
 
+/* modal styling starts here */
+.modal {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 50;
+}
+
+.modal .wrapper {
+  width: 100%;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: right;
+  background: #000000b3;
+}
+
+.slide-num {
+  width: 40%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 7px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+}
+
+.close-vid {
+  margin-right: 10px;
+  font-weight: 900;
+  font-size: 13px;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.close-vid:hover { color: #666; }
+
+.modal-slider {
+  width: 40%;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-slider .slick-prev,
+.modal-slider .slick-next {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  font-size: 0;
+}
+
+.modal-slider .slick-prev { left: 0; }
+.modal-slider .slick-next { right: 0; }
+
+.modal-slider .slick-prev::after,
+.modal-slider .slick-next::after {
+  padding: 16px 12px;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+  text-indent: 0;
+}
+
+.modal-slider .slick-prev:hover::after,
+.modal-slider .slick-next:hover::after { color: #666; }
+
+.modal-slider .slick-prev::after { content: '\f053'; }
+.modal-slider .slick-next::after { content: '\f054'; }
+.no { display: none; }
+/* modal styling ends here */
 
 
 /*=================================

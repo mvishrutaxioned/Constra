@@ -148,7 +148,7 @@ li {
   margin-right: 5px;
 }
 
-.location span {
+.location address {
   color: #858383;
   font-weight: 600;
   font-size: 14px;
@@ -1043,8 +1043,10 @@ nav > ul > li:hover ul.list {
   outline: none;
 }
 
-.error { 
+.error {
+  margin-top: 5px;
   display: none;
+  position: absolute;
   color: #ff2020;
   font-weight: 600;
   font-size: 10px;

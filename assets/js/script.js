@@ -25,4 +25,22 @@ $(document).ready(() => {
             image: '../assets/Images/news/news3.jpg'
         }
     ]
+
+    $('.seeAllPosts').click(e => {
+        e.preventDefault()
+
+        $.each(data, function(i, elem) {
+            content += `
+            <li>
+                <figure>
+                    <img src="${elem.image}" alt="News 1">
+                </figure>
+                <h3><a href="#FIXME" title="Project 1">${elem.title}</a></h3>
+                <span>${elem.date}</span>
+            </li>
+            `;
+        })
+        $('.excellence ul').append(content)
+        $('.seeAllPosts').hide();
+    })
 })

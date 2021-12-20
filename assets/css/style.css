@@ -1430,6 +1430,112 @@ nav .wrapper > ul > li:hover ul.list {
   footer styling starts here
 =================================*/ 
 
+/* footer-top styling ends here */
+footer {
+  margin-top: 60px;
+  position: relative;
+}
+
+.footBtn { bottom: 30%; }
+
+.footer-top {
+  padding: 80px 0;
+  background-color: #030303;
+}
+
+.footer-top .wrapper > ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 8% 30% 8% 30%;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap: 8%;
+  color: #dfdcdc;
+}
+
+.footer-top ul li span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.footer-top ul li span::before {
+  content: '|';
+  margin-right: 15px;
+  color: #ffb600;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-top ul li p {
+  margin: 32px 0;
+  color: #949393;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.footer-top ul li:first-child p { width: 105%; }
+
+.footer-top ul li h1 {
+  width: 60%;
+  margin-top: 30px;
+}
+
+.footer-top .social { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
+
+.footer-top .social li { margin-right: 25px; }
+.footer-top ul li .social li a::after { color: #fff; }
+
+.shifts li {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #949393;
+}
+
+.footer-top ul li:nth-child(2) small { font-size: 13.5px; }
+
+.ser-list {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.ser-list li a {
+  padding: 12px 0;
+  color: #949393;
+  font-size: 14px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.ser-list li a::before {
+  content: '>';
+  margin-right: 10px;
+  color: #949494;
+  font-family:monospace;
+  font-size: 14px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.ser-list li a:hover,
+.ser-list li a:hover::before { color: #fff; }
+/* footer-top styling ends here */
+
 
  /*=================================
   footer styling ends here

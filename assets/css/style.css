@@ -1258,6 +1258,55 @@ nav .wrapper > ul > li:hover ul.list {
 
 /* excellence styling ends here */
 
+/* toggleBtn styling starts here */
+
+.toggleBtn {
+  display: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+  text-indent: -9999px;
+  z-index: 30;
+}
+
+.toggleBtn::after {
+  content: '\f102';
+  padding: 10px 12px;
+  border-radius: 3px;
+  background: #030303;
+  color: #ffb600;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  font-size: 14px;
+  text-indent: 0;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.toggleBtn:hover,
+.toggleBtn:hover::after {
+  border-radius: 3px;
+  background: #333;
+  color: #fff;
+}
+
+.flex { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
+/* toggleBtn styling ends here */
+
 
 
 /*=================================

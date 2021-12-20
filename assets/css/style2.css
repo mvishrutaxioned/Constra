@@ -495,6 +495,80 @@ nav > ul > li:hover ul.list { display: -webkit-box; display: -ms-flexbox; displa
 .req-quote a:hover { background: #464c52; }
 /* banner sytling ends here */
 
+/* article styling starts here */
+
+.articles .wrapper { padding: 40px 0 35px 0; }
+
+.articles ul {
+  margin: 30px auto 25px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.articles ul li:nth-child(2n) { margin: 0 30px; }
+
+.art-content {
+  width: 100%;
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.art-content h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.art-content p {
+  color: #5a5a5a;
+  font-weight: 600;
+  font-size: 13.5px;
+  line-height: 22px;
+}
+
+.art-content a {
+  margin: 25px 0 0 6px;
+  color: #474747;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.art-content a::before {
+  content: '\f0da';
+  padding-right: 4px;
+  position: relative;
+  top: 1px;
+  color: #474747;
+  font-weight: 600;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 16px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.art-content a:hover,
+.art-content a:hover::before { color: #000; }
+
+.art-content figure {
+  width: 60%;
+  margin-right: 20px;
+}
+
+.art-info { margin-left: 20px; }
+/* article styling ends here */
 
 
 /*=================================

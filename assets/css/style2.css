@@ -148,7 +148,7 @@ li {
   margin-right: 5px;
 }
 
-.location span {
+.location address {
   color: #858383;
   font-weight: 600;
   font-size: 14px;
@@ -287,8 +287,7 @@ nav > ul > li:hover ul.list {
   flex-direction: column;
   position: absolute;
   top: 100%;
-  background: #dfdcdc;
-  overflow: hidden;
+  overflow: visible;
   z-index: 10;
 }
 
@@ -297,6 +296,7 @@ nav > ul > li:hover ul.list {
 .list li a {
   width: 100%;
   padding: 10px;
+  background: #dfdcdc;
   color: #000;
   font-size: 13px;
   font-weight: 600;
@@ -1043,8 +1043,10 @@ nav > ul > li:hover ul.list {
   outline: none;
 }
 
-.error { 
+.error {
+  margin-top: 5px;
   display: none;
+  position: absolute;
   color: #ff2020;
   font-weight: 600;
   font-size: 10px;
@@ -1474,10 +1476,18 @@ footer {
   nav > ul > li a:hover,
   nav > ul > li a:hover::after { color: #fff; }
 
-  ul.list { 
-    text-align: center;
-    background: #000000ff;
+  .list {
+    width: 100%;
+    position: static;
+    top: 0;
+    background: none;
     overflow: visible;
+  }
+  
+  .list li a {
+    width: 100%;
+    padding: 0;
+    background: #dfdcdc;
   }
 
   ul.list li a { background: #dfdcdc; }

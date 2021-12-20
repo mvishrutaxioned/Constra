@@ -149,7 +149,7 @@ li {
   margin-right: 5px;
 }
 
-.location span {
+.location address {
   color: #858383;
   font-weight: 600;
   font-size: 14px;
@@ -717,9 +717,6 @@ nav .wrapper > ul > li:hover ul.list {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 10px;
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
 }
 
 .values ul li.active h3::after { 
@@ -1210,8 +1207,10 @@ nav .wrapper > ul > li:hover ul.list {
   outline: none;
 }
 
-.error { 
+.error {
+  margin-top: 5px;
   display: none;
+  position: absolute;
   color: #ff2020;
   font-weight: 600;
   font-size: 10px;
@@ -1646,17 +1645,22 @@ footer {
 
   nav .wrapper > ul.slide,
   .close.slide { 
-    -webkit-transform: translateX(0); 
-    -ms-transform: translateX(0); 
-    transform: translateX(0); 
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
 
   nav .wrapper > ul > li,
-  nav .wrapper > ul > li a { padding: 10px; }
+  nav .wrapper > ul > li a {
+    padding: 10px;
+  }
+
   nav .wrapper > ul > li a::after { margin-top: 10px; }
 
   .list {
     width: 100%;
+    position: static;
+    top: 0;
     background: none;
     overflow: visible;
   }
@@ -1964,13 +1968,12 @@ footer {
   .banner-content a:first-child:hover { background-color: #ffb600; }
   .values ul li h3::after { background: #000; }
 
-  nav .wrapper > ul > li > a:hover,
-  nav .wrapper > ul > li > a:hover::after,
-  nav .wrapper > ul > li > a.active,
-  nav .wrapper > ul > li > a.active::after,
   .search:hover::after,
   .banner .slick-prev:hover::after,
-  .banner .slick-next:hover::after { color: #fff; }
+  .banner .slick-next:hover::after { 
+    color: #fff; 
+  }
+
   .list li a:hover { background: #dfdcdc; }
   .banner-content a:last-child:hover { border-color: #ffb600; }
 
@@ -1980,16 +1983,31 @@ footer {
     background: #000000;
   }
 
+  nav .wrapper > ul > li > a:hover,
+  nav .wrapper > ul > li > a:hover::after,
+  nav .wrapper > ul > li > a.active,
+  nav .wrapper > ul > li > a.active::after { 
+    color: #fff; 
+  }
+
   .req-quote a:hover { background: #23282c; }
   .values ul li h3:hover::after,
-  .values ul li.active h3::after { background: #000; }
+  .values ul li.active h3::after { 
+    background: #000; 
+  }
   .tabs li a:hover { background : #f9f9f9; }
+
   .add:hover,
   .img-content a:hover,
   .viewAllPro:hover,
-  .seeAllPosts:hover { background-color: #ffb600; }
+  .seeAllPosts:hover { 
+    background-color: #ffb600; 
+  }
+
   .excellence ul li h3 a:hover,
-  .foot-bottom ul li a:hover { color: #000; }
+  .foot-bottom ul li a:hover { 
+    color: #000; 
+  }
 
   .toggleBtn:hover,
   .toggleBtn:hover::after {
@@ -1998,9 +2016,14 @@ footer {
   }
 
   .ser-list li a:hover,
-  .ser-list li a:hover::before { color: #949494; }
+  .ser-list li a:hover::before { 
+    color: #949494; 
+  }
+
   .modal-slider .slick-prev:hover::after,
-  .modal-slider .slick-next:hover::after { color: #666; }
+  .modal-slider .slick-next:hover::after {
+    color: #666; 
+  }
   /* remove hover ends here */
 }
 
@@ -2014,9 +2037,12 @@ footer {
   }
 
   .head-top .wrapper ul { margin-top: 10px; }
+
   .deliver ul li:nth-child(2),
   .deliver ul li:nth-child(3),
-  .deliver ul li:nth-child(4) { margin-left: 0; }
+  .deliver ul li:nth-child(4) { 
+    margin-left: 0; 
+  }
 
   .banner-content a:first-child { 
     font-size: 8px;

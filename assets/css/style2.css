@@ -187,6 +187,124 @@ li {
 .footer-top .social li a:hover::after { color: #666; }
 
 
+/* head mid styling starts here */
+.head-mid .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.logo { width: 14.5%; }
+
+.menu {
+  display: none;
+  position: relative;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.close { 
+  display: none;
+  cursor: pointer;  
+}
+
+.menu::after {
+  content: '\f0c9';
+  color: #000;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+}
+
+nav > ul > li { 
+  margin-right: 33px;
+  position: relative; 
+}
+
+nav > ul > li > a {
+  padding: 44px 0;
+  position: relative;
+  color: #000;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+nav > ul > li > a::after {
+  content: '\f078';
+  padding-left: 2px;
+  margin-top: 44px;
+  position: absolute;
+  top: 3px;
+  color: #000;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  font-size: 10px;
+}
+
+nav > ul > li:nth-child(7) > a::after,
+nav > ul > li:nth-child(8) > a::after { content: ''; }
+nav > ul > li:nth-child(8) { margin: 0; }
+nav > ul > li:nth-child(7) { margin-right: 24px; }
+
+nav > ul > li:nth-child(8) > a {
+  padding: 12px 24px;
+  margin: 0;
+  border-radius: 3px;
+  background: #ffb600;
+}
+
+nav > ul > li:nth-child(8) > a:hover {
+  color: #000;
+  background: #f7ca5a;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:hover::after {
+  color: #ffb600;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+nav > ul > li:hover ul.list { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.list {
+  width: auto;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  background: #dfdcdc;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.list li { width: 100%;}
+
+.list li a {
+  width: 100%;
+  padding: 10px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.list li a:hover { background: #fff; }
+/* nav styling ends here */
+
+
 /*=================================
   Header styling ends here
 =================================*/  

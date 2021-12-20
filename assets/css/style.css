@@ -188,6 +188,69 @@ li {
 .footer-top .social li a:hover::after { color: #666; }
 /* headerTop styling ends here */
 
+/* head mid styling starts here */
+.head-mid .wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 35px 0 33px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.logo { width: 17%; }
+
+.head-mid ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.head-mid ul li { margin-right: 53px; }
+.head-mid ul li:last-child { margin: 0; }
+
+.head-mid ul li span,
+.head-mid ul li h2 a,
+.head-mid ul li:last-child a {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -.2px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.head-mid ul li span { color: #828585; }
+.head-mid ul li h2 a,
+.head-mid ul li:last-child a { font-weight: 900; }
+
+.head-mid ul li h2 a:hover { color: #666; }
+.head-mid ul li:last-child a:hover { background-color: #f7ca5a; }
+
+.head-mid ul li:last-child a {
+  padding: 13px 28px;
+  background: #ffb600;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: .6px;
+}
+
+.head-mid ul li h2 a {
+  color: #000;
+  margin-top: 10px;
+}
+/* headerMid styling ends here */
+
+
 
 /*=================================
   Header styling ends here

@@ -120,4 +120,20 @@ $(document).ready(() => {
         $('.close').removeClass('slide');
         $('html, body').css("overflow", "visible");
     })
+
+    // hide and show toggle btn functioanality
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > topHeight) {
+            $('.toggleBtn').addClass('flex');
+        } else {
+            $('.toggleBtn').removeClass('flex');
+        }
+    });
+
+    // on toggleBtn click functionality
+    $('.toggleBtn').click(e => {
+        e.preventDefault();
+        window.scroll({top: 0, behavior: "smooth"});
+    })
+
 })

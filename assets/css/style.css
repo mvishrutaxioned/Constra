@@ -1026,7 +1026,131 @@ nav .wrapper > ul > li:hover ul.list {
   transition: .5s ease;
 }
 /* projects styling ends here */
-=
+
+/* testimonials clients styling starts here */
+.test-client {
+  width: 100%;
+  padding: 16px 0;
+  margin: 16px auto;
+  position: relative;
+}
+
+.tcBtn { bottom: 30%; }
+
+.test-client .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.testimonials,
+.clients { width: 50%; }
+
+.test-slider {
+  padding-bottom: 35px;
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.test-slider .slick-dots { bottom: 0; }
+
+.testimonials h2,
+.clients h2 {
+  font-weight: 900;
+  font-size: 23px;
+}
+
+.testimonials p {
+  width: 80%;
+  color: #828585;
+  font-weight: 600;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 28px;
+  letter-spacing: -.5px;
+}
+
+.text {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text span {
+  position: relative;
+  font-size: 0;
+}
+
+.text span::after {
+  content: '\f10d';
+  margin-right: 30px;
+  color: #ffb600;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 30px;
+  font-style: italic;
+  text-indent: 0;
+}
+
+.user-info {
+  margin-top: 40px;
+  margin-left: 11%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.user-info figure {
+  width: 16%;
+  border-radius: 5px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.user-info h3 {
+  color: #ffb600;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.user-info div { line-height: 26px; }
+
+.user-info small {
+  padding-top: 25px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.clients ul {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.clients ul li a { 
+  padding: 22px 30px;
+  border: 1px solid #dfdcdc; 
+}
+
+.clients ul li:first-child a { padding: 22px 30px 38px 30px; }
+
+.clients ul li img { 
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%); 
+}
+/* testimonials clients styling ends here */
+
 
 /*=================================
   main styling ends here

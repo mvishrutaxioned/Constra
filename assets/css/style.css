@@ -798,6 +798,84 @@ nav .wrapper > ul > li:hover ul.list {
 
 /* counter styling ends here */
 
+/* speciality styling starts here */
+
+.speciality {
+  padding: 35px 0;
+  position: relative;
+}
+
+.specialBtn { top: 10%; }
+
+.speciality .wrapper {
+  padding: 35px 0 50px 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.speciality .wrapper p {
+  margin-bottom: 10px;
+  letter-spacing: -.5px;
+}
+
+.speciality h2,
+.excellence h2 {
+  margin-top: -5px;
+  font-size: 36px;
+}
+
+.speciality ul {
+  padding-top: 20px;
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 37% 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 37%;
+  grid-row-gap: 16%;
+}
+
+.speciality ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.speciality ul li h3 { margin-bottom: 5px; }
+
+.speciality ul li figure {
+  width: 36%;
+  margin-right: 25px;
+}
+
+.speciality ul li p {
+  color: #949393;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: .5px;
+  line-height: 25px;
+}
+
+.speciality .wrapper > figure {
+  width: 350px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+  left: 0;
+}
+/* speciality styling ends here */
+
 
 /*=================================
   main styling ends here

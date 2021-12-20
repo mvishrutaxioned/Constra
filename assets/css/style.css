@@ -582,6 +582,169 @@ nav .wrapper > ul > li:hover ul.list {
 
 /* banner sytling ends here */
 
+/* about styling starts here */
+.about {
+  padding-bottom: 50px;
+  margin: 22px auto 50px auto;
+  position: relative;
+}
+
+.aboutBtn { bottom: 38%; }
+
+.about .about-info,
+.deliver ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+
+.about .wrapper > p,
+.speciality .wrapper > p,
+.projects .wrapper > p,
+.excellence .wrapper > p { font-size: 18px; }
+
+.deliver h2,
+.values h2,
+.speciality h2,
+.projects h2,
+.excellence h2 {
+  margin-top: 10px;
+  color: #23282c;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.values h2 { margin-top: -10px; }
+
+.deliver p,
+.values p {
+  margin-top: 15px;
+  color: #949393;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.values p { margin-top: 10px; }
+
+.deliver ul {
+  margin-top: 40px;
+  grid-gap: 30px;
+}
+
+.deliver ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.deliver ul li h3,
+.speciality ul li h3 {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -.6px;
+  line-height: 28px;
+}
+
+.deliver ul li span {
+  margin-right: 65px;
+  display: inline;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.deliver ul li span::after {
+  content: '\f091';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #ffb600;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  font-size: 37px;
+  text-indent: 0;
+}
+
+.deliver ul li span.adjust::after { content: '\f1de'; }
+.deliver ul li span.thumb::after { content: '\f164'; }
+.deliver ul li span.team::after { content: '\f0c0'; }
+
+.values ul {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.values ul li { 
+  border: 1px solid #dfdcdc;
+  margin-bottom: 8px;
+}
+
+.values ul li.active h3 { color: #ffb600; }
+
+.values ul li h3 {
+  padding: 16px;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.values ul li h3::after {
+  content: '\f078';
+  padding: 6px 8px;
+  border-radius: 2px;
+  float: right;
+  background: #333;
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.values ul li.active h3::after { 
+  content: '\f106';
+  padding: 4px 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.values ul li h3:hover::after,
+.values ul li.active h3::after { background: #ffb600; }
+.values ul li h3:hover { color: #ffb600; }
+
+.values ul li div {
+  padding: 6px 18px 16px 18px;
+  margin: 0;
+  border-top: 1px solid #dfdcdc;
+  display: none;
+}
+
+.values ul li div p { letter-spacing: -.2px; }
+.values ul li:first-child div { display: block; }
+
+/* about styling ends here */
+
 
 /*=================================
   main styling ends here

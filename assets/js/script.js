@@ -185,4 +185,22 @@ $(document).ready(() => {
             num = i;
         })
     })
+
+    // show tab functionality
+    showTab(0)
+    $('.tabs li a').each(function (index, tab){
+        $(tab).click((e) => {
+            showTab(index)
+        })
+    })
+
+    function showTab(n) {
+
+        $('.tabs li a').each(function (index, tab){ $(this).removeClass('active') })
+        $('.tab-content > li').each(function (index, tab){ $(this).hide() })
+
+        $('.tabs li a').eq(n).addClass('active')
+        if(n == 0) $('.tab-content > li').each(function(i, e) { $(this).show() })
+        else $('.tab-content > li').eq(n-1).fadeIn()
+    }
 })

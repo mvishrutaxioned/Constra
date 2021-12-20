@@ -1218,6 +1218,47 @@ nav .wrapper > ul > li:hover ul.list {
 }
 /* help letter styling ends here */
 
+/* excellence styling starts here */
+.excellence { position: relative; }
+.exBtn { bottom: 50%; }
+
+.excellence .wrapper {
+  padding: 12px 0;
+  text-align: center;
+}
+
+.excellence h2 { margin-top: 0; }
+
+.excellence ul {
+  margin-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: left;
+}
+
+.excellence ul li h3 {
+  margin: 20px 0 5px 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.excellence ul li h3 a { 
+  color: #000;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease; 
+}
+
+.excellence ul li h3 a:hover { color: #666; }
+.excellence ul li span { font-size: 13px; }
+
+/* excellence styling ends here */
+
+
 
 /*=================================
   main styling ends here

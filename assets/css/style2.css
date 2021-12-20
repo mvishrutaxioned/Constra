@@ -272,7 +272,11 @@ nav > ul > li > a:hover::after {
   transition: .5s ease;
 }
 
-nav > ul > li:hover ul.list { display: -webkit-box; display: -ms-flexbox; display: flex; }
+nav > ul > li:hover ul.list { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
 
 .list {
   width: auto;
@@ -492,7 +496,7 @@ nav > ul > li:hover ul.list { display: -webkit-box; display: -ms-flexbox; displa
   transition: .5s ease;
 }
 
-.req-quote a:hover { background: #464c52; }
+.req-quote a:hover { background: #f7ca5a; }
 /* banner sytling ends here */
 
 /* article styling starts here */
@@ -1354,7 +1358,7 @@ footer {
 .ser-list li a::before {
   content: '>';
   margin-right: 10px;
-  color: #949494;
+  color: #949393;
   font-family:monospace;
   font-size: 14px;
   -webkit-transition: .5s ease;
@@ -1762,6 +1766,41 @@ footer {
     -ms-flex-wrap: wrap; 
     flex-wrap: wrap; 
   }
+
+  /* remove hover effects */
+  nav > ul > li:nth-child(8) > a:hover,
+  .banner-content a:hover,
+  .req-quote a:hover,
+  .add:hover,
+  .img-content a:hover,
+  .viewAllPro:hover,
+  .seeAllPosts:hover { background: #ffb600; }
+  .list li a:hover { background: #dfdcdc; }
+  .art-content a:hover,
+  .art-content a:hover::before { color: #474747; }
+  .tabs li a:hover { background :#f9f9f9; }
+  .excellence ul li h3 a:hover,
+  .foot-bottom ul li a:hover,
+  .social li a:hover::after,
+  .social li a:hover::after,
+  .footer-top .social li a:hover::after,
+  nav > ul > li > a:hover,
+  nav > ul > li > a:hover::after { color: #000; }
+
+  .toggleBtn:hover,
+  .toggleBtn:hover::after {
+    background: #030303;
+    color: #ffb600;
+  }
+
+  .modal-slider .slick-prev:hover::after,
+  .modal-slider .slick-next:hover::after,
+  .close-vid:hover,
+  .footer-top .social li a:hover::after,
+  .banner .slick-prev:hover::after,
+  .banner .slick-next:hover::after { color: #fff; }
+  .ser-list li a:hover,
+  .ser-list li a:hover::before { color: #949494; }
 }
 
 /*media query for 320px starts here*/

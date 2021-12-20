@@ -76,4 +76,31 @@ $(document).ready(() => {
             $('html, body').css("overflow", "hidden");
         })
     })
+
+    // $('.projects, .specialists, .test-client').click(e => {
+    //     if($('section.modal:not(.no)') == fals) {
+    //         $('section.modal').fadeOut();
+    //         $('section.modal').addClass('no');
+    //         $('html, body').css("overflow", "visible");
+    //     console.log('hai')
+    //     }
+    // })
+
+    // close video functionality by clicking outside
+    $(document).mouseup(function(e) {
+        var container = $(".modal-slider");
+        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        {
+            $('section.modal').fadeOut();
+            $('section.modal').addClass('no');
+            $('html, body').css("overflow", "visible")
+        }
+    });
+
+    // close modal slider
+    $('.close-vid').click(e => {
+        $('section.modal').fadeOut();
+        $('section.modal').addClass('no');
+        $('html, body').css("overflow", "visible");
+    })
 })

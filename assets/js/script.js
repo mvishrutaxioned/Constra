@@ -56,10 +56,7 @@ $(document).ready(() => {
         autoplay: true
     })
 
-    $('.modal-slider').slick({
-        dots: false,
-        arrows: true
-    })
+    $('.modal-slider').slick({ arrows: true })
 
     // modal slider num change
     $('.modal-slider .slick-next, .modal-slider .slick-prev').click(e => {
@@ -69,6 +66,15 @@ $(document).ready(() => {
 
     $('.tab-content li').each(function(i, elem) {
         $(this).click(e => {
+            if(!$(`.tabs li:eq(${0}) a`).hasClass('active')) {
+                $('.modal-slider .slick-prev, .modal-slider .slick-next').hide();
+                $('.modal-slider').slick('slickGoTo', i)
+            } else  if($(`.tabs li:eq(${0}) a`).hasClass('active')) {
+                $('.modal-slider .slick-prev, .modal-slider .slick-next').show();
+                $('.modal-slider').slick('slickGoTo', i)
+            }
+
+            $('.img-num').text(i+1)
             $('section.modal').fadeIn();
             $('section.modal').removeClass('no');
             $('html, body').css("overflow", "hidden");
